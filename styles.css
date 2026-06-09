@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #4a4a4a;
+}
+
+.container {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* ── Header ── */
+
+.site-header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.4);
+}
+
+.site-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header a {
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.site-header a:hover {
+  color: #c9a96e;
+  border-bottom: 1px solid #c9a96e;
+}
+
+/* ── Homepage transparent header ── */
+
+.home-page .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  border-bottom: none;
+  z-index: 10;
+}
+
+/* ── Page sections (About, Contact, etc.) ── */
+
+main>section {
+  background-color: #fff;
+  padding: 3rem 0;
+  margin: 2rem 0;
+}
+
+main>section.info-cards,
+main>section.event-list,
+main>section.image-grid {
+  background-color: transparent;
+  padding: 0;
+}
+
+main>section h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+main>section p {
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+main>section ul {
+  padding-left: 1.5rem;
+  color: #5a5a5a;
+  list-style: none;
+}
+
+main>section ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid #c9a96e;
+}
+
+/* ── Hero (Homepage video section) ── */
+
+.hero {
+  position: relative;
+  background-color: #1a1a1a;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3.8rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+}
+
+/* ── Button ── */
+
+.button {
+  display: inline-block;
+  padding: 0.85rem 2.5rem;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  border-color: #fff;
+}
+
+/* ── Cards grid (Info cards & Event list) ── */
+
+.info-cards,
+.event-list,
+.image-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.info-cards {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.event-list {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.info-cards article,
+.event-list article {
+  background-color: #fff;
+  padding: 2.5rem;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-cards article:hover,
+.event-list article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.info-cards h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.info-cards article p,
+.event-list article p {
+  color: #6a6a6a;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.event-list h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+/* ── Gold accent line (used as decorative separator) ── */
+
+.info-cards article,
+.event-list article {
+  border-top: 3px solid #c9a96e;
+}
+
+/* ── Gallery ── */
+
+.image-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.image-card {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f5f5f0;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Contact ── */
+
+.contact-info {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  color: #5a5a5a;
+  padding-left: 1rem;
+  border-left: 2px solid #c9a96e;
+}
+
+.contact-info strong {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* ── Footer ── */
+
+footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-top: 3rem;
+  color: #999;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* ── Caption ── */
+
+.caption {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .site-header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+}

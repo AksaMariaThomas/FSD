@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events - College Fest 2026</title>
+  <title>Events &amp; Fests - CHRIST University</title>
+  <meta name="description" content="Explore the iconic fests and cultural events at CHRIST (Deemed to be University) — INBLOOM, Darpan, Erato, Magnovite, and more." />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Fest Events</h1>
+      <h1>Events &amp; Fests</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -20,24 +22,225 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="event-list">
-      <article>
-        <h2>Music Night</h2>
-        <p>Live performances by campus bands, solo singers, and DJs.</p>
-      </article>
-      <article>
-        <h2>Tech Challenge</h2>
-        <p>Hackathon, coding sprint, and robotics showcase for tech enthusiasts.</p>
-      </article>
-      <article>
-        <h2>Sports Day</h2>
-        <p>Friendly competitions in football, basketball, relay races, and more.</p>
-      </article>
-      <article>
-        <h2>Art & Culture</h2>
-        <p>Dance, drama, painting, and cultural performances celebrating diversity.</p>
-      </article>
+  <main>
+    <!-- Events Hero -->
+    <section class="events-hero">
+      <div class="events-hero-overlay"></div>
+      <div class="events-hero-content">
+        <span class="events-hero-tag">CHRIST University</span>
+        <h2>Where Passion<br><em>Takes the Stage</em></h2>
+        <p>From iconic cultural fests to national-level competitions — discover the events that define our campus spirit.</p>
+      </div>
+    </section>
+
+    <!-- Featured Fests -->
+    <div class="container">
+      <div class="events-section-header">
+        <span class="section-line"></span>
+        <h2>Flagship Fests</h2>
+        <span class="section-line"></span>
+      </div>
+
+      <div class="events-flex" id="eventsGrid">
+
+        <!-- INBLOOM -->
+        <article class="event-card event-card--featured" id="event-inbloom">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">🎭</span>
+            <div class="event-card-date">Jan 22 – 24, 2026</div>
+            <h3>INBLOOM</h3>
+            <p class="event-subtitle">University Cultural Fest</p>
+            <p>CHRIST's flagship cultural festival featuring dance, music, theatre, literary events, art competitions, photography, esports, debates, and more. The biggest celebration of talent on campus.</p>
+            <div class="event-tags">
+              <span class="event-tag">Dance</span>
+              <span class="event-tag">Music</span>
+              <span class="event-tag">Theatre</span>
+              <span class="event-tag">Literary</span>
+              <span class="event-tag">Esports</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Magnovite -->
+        <article class="event-card event-card--featured" id="event-magnovite">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">💻</span>
+            <div class="event-card-date">National Level</div>
+            <h3>Magnovite</h3>
+            <p class="event-subtitle">Techno-Cultural Fest</p>
+            <p>A national-level techno-cultural fest at Kengeri Campus combining hackathons, technical competitions, management events, architecture competitions, cultural performances, celebrity concerts, and workshops.</p>
+            <div class="event-tags">
+              <span class="event-tag">Hackathons</span>
+              <span class="event-tag">Tech</span>
+              <span class="event-tag">Concerts</span>
+              <span class="event-tag">Workshops</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Darpan -->
+        <article class="event-card" id="event-darpan">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">🎤</span>
+            <h3>Darpan</h3>
+            <p class="event-subtitle">Novice Cultural Fest</p>
+            <p>A novice-entry cultural fest where students from different departments compete in music, dance, theatre, literary, and arts events. Especially popular among first-year students as a talent-discovery platform.</p>
+            <div class="event-tags">
+              <span class="event-tag">Freshers</span>
+              <span class="event-tag">Music</span>
+              <span class="event-tag">Dance</span>
+              <span class="event-tag">Arts</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Erato -->
+        <article class="event-card" id="event-erato">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">🎵</span>
+            <h3>Erato</h3>
+            <p class="event-subtitle">Music Festival</p>
+            <p>A music-focused festival organized by the Student Welfare Office (SWO), featuring bands, singers, and instrumental performances that resonate across campus.</p>
+            <div class="event-tags">
+              <span class="event-tag">Bands</span>
+              <span class="event-tag">Vocals</span>
+              <span class="event-tag">Instruments</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bhasha Utsav -->
+        <article class="event-card" id="event-bhasha">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">🌍</span>
+            <h3>Bhasha Utsav</h3>
+            <p class="event-subtitle">Cultural Diversity Celebration</p>
+            <p>A celebration of linguistic and regional diversity where students wear traditional attire, represent their states and countries, perform cultural dances, and participate in ethnic showcases.</p>
+            <div class="event-tags">
+              <span class="event-tag">Traditional</span>
+              <span class="event-tag">Diversity</span>
+              <span class="event-tag">Dance</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Magnificat -->
+        <article class="event-card" id="event-magnificat">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">🎄</span>
+            <h3>Magnificat</h3>
+            <p class="event-subtitle">Christmas Celebration</p>
+            <p>One of Christ's major Christmas celebrations, involving choir performances, music, decorations, and inter-campus participation that brings the entire university together.</p>
+            <div class="event-tags">
+              <span class="event-tag">Choir</span>
+              <span class="event-tag">Music</span>
+              <span class="event-tag">Celebration</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nritta -->
+        <article class="event-card" id="event-nritta">
+          <div class="event-card-accent"></div>
+          <div class="event-card-body">
+            <span class="event-icon">💃</span>
+            <h3>Nritta</h3>
+            <p class="event-subtitle">Inter-Collegiate Dance Festival</p>
+            <p>An inter-collegiate dance festival often associated with larger events like Magnovite, attracting talented dancers from colleges across India to compete and perform.</p>
+            <div class="event-tags">
+              <span class="event-tag">Dance</span>
+              <span class="event-tag">Competition</span>
+              <span class="event-tag">National</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Other Popular Events -->
+    <section class="events-other-section">
+      <div class="container">
+        <div class="events-section-header">
+          <span class="section-line"></span>
+          <h2>More Campus Events</h2>
+          <span class="section-line"></span>
+        </div>
+
+        <div class="events-ticker">
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🏆</span>
+            <div>
+              <h4>Devadan Cup</h4>
+              <p>Annual inter-departmental sports tournament</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">👘</span>
+            <div>
+              <h4>Ethnic Day</h4>
+              <p>Campus-wide traditional attire celebration</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🧠</span>
+            <div>
+              <h4>Debates &amp; MUNs</h4>
+              <p>Inter-collegiate debates and Model United Nations</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">💼</span>
+            <div>
+              <h4>Business Competitions</h4>
+              <p>B-plan contests and entrepreneurship challenges</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🎨</span>
+            <div>
+              <h4>Department Fests</h4>
+              <p>Individual department cultural &amp; technical fests</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🖥️</span>
+            <div>
+              <h4>Hackathons</h4>
+              <p>24-hour coding marathons and tech challenges</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🏅</span>
+            <div>
+              <h4>Sports Tournaments</h4>
+              <p>Football, basketball, cricket, and athletics events</p>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <span class="ticker-icon">🎭</span>
+            <div>
+              <h4>Club Events</h4>
+              <p>Year-round events by 50+ student clubs</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 
@@ -46,5 +249,22 @@
       <p>&copy; 2026 College Fest. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Staggered entrance animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('event-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.event-card, .ticker-item').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.08}s`;
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>

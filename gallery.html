@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery - College Fest 2026</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -20,46 +21,239 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="image-grid">
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.32%20PM.jpeg" alt="Gallery Photo 1" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.43%20PM.jpeg" alt="Gallery Photo 2" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.54%20PM.jpeg" alt="Gallery Photo 3" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%206.37.04%20PM.jpeg" alt="Gallery Photo 4" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.31.52%20PM.jpeg" alt="Gallery Photo 5" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.02%20PM.jpeg" alt="Gallery Photo 6" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.13%20PM.jpeg" alt="Gallery Photo 7" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.24%20PM.jpeg" alt="Gallery Photo 8" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.35.12%20PM.jpeg" alt="Gallery Photo 9" />
-      </div>
-      <div class="image-card">
-        <img src="images/WhatsApp%20Image%202026-06-09%20at%207.35.23%20PM.jpeg" alt="Gallery Photo 10" />
+  <main>
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-overlay"></div>
+      <div class="gallery-hero-content">
+        <span class="gallery-hero-tag">College Fest 2026</span>
+        <h2>Moments Worth<br><em>Remembering</em></h2>
+        <p>A curated collection of memories from music, performances, and campus life.</p>
       </div>
     </section>
-    <p class="caption">Snapshots from last year’s fest — music, performances, and campus life.</p>
+
+    <!-- Filter Tabs -->
+    <div class="container">
+      <div class="gallery-filters" id="galleryFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="performance">Performances</button>
+        <button class="filter-btn" data-filter="campus">Campus</button>
+        <button class="filter-btn" data-filter="crowd">Crowd</button>
+      </div>
+    </div>
+
+    <!-- Flexbox Gallery -->
+    <div class="container">
+      <div class="gallery-flex" id="galleryGrid">
+
+        <div class="gallery-item" data-category="performance">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.32%20PM.jpeg" alt="Live Performance" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Live Performance</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.43%20PM.jpeg" alt="Campus Decor" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Campus Decor</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="crowd">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%206.36.54%20PM.jpeg" alt="Crowd Moments" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Crowd Moments</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="performance">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%206.37.04%20PM.jpeg" alt="Stage Act" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Stage Act</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.31.52%20PM.jpeg" alt="Campus Lights" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Campus Lights</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="crowd">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.02%20PM.jpeg" alt="Audience Energy" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Audience Energy</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="performance">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.13%20PM.jpeg" alt="Dance Performance" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Dance Performance</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="campus">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.32.24%20PM.jpeg" alt="Fest Vibes" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Fest Vibes</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="crowd">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.35.12%20PM.jpeg" alt="Celebration" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Celebration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="performance">
+          <img src="images/WhatsApp%20Image%202026-06-09%20at%207.35.23%20PM.jpeg" alt="Musical Night" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">&#x2922;</span>
+            <span class="gallery-overlay-label">Musical Night</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Gallery full view" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
 
   <footer>
     <div class="container">
       <p>&copy; 2026 College Fest. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // ── Staggered entrance animation ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = `${i * 0.07}s`;
+          entry.target.classList.add('gallery-item--visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.gallery-item').forEach(item => observer.observe(item));
+
+    // ── Filter ──
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        items.forEach((item, i) => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.transitionDelay = `${i * 0.05}s`;
+            item.classList.remove('gallery-item--hidden');
+          } else {
+            item.style.transitionDelay = '0s';
+            item.classList.add('gallery-item--hidden');
+          }
+        });
+      });
+    });
+
+    // ── Lightbox ──
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxCounter = document.getElementById('lightboxCounter');
+    let currentIndex = 0;
+    let visibleItems = [];
+
+    function getVisibleItems() {
+      return [...document.querySelectorAll('.gallery-item:not(.gallery-item--hidden)')];
+    }
+
+    function openLightbox(index) {
+      visibleItems = getVisibleItems();
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.add('lightbox--open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightbox() {
+      const item = visibleItems[currentIndex];
+      const img = item.querySelector('img');
+      const label = item.querySelector('.gallery-overlay-label');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = label ? label.textContent : '';
+      lightboxCounter.textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('lightbox--open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+      updateLightbox();
+    });
+    document.getElementById('lightboxNext').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % visibleItems.length;
+      updateLightbox();
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('lightbox--open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') {
+        currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+        updateLightbox();
+      }
+      if (e.key === 'ArrowRight') {
+        currentIndex = (currentIndex + 1) % visibleItems.length;
+        updateLightbox();
+      }
+    });
+
+    // Attach click handlers
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const visible = getVisibleItems();
+        const idx = visible.indexOf(item);
+        if (idx !== -1) openLightbox(idx);
+      });
+    });
+  </script>
 </body>
 </html>
